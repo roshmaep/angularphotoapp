@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { ViewPhotoComponent } from './view-photo/view-photo.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
-
+import {HttpClientModule} from '@angular/common/http';
 const myRoute:Routes=[
 
   {
@@ -31,6 +31,7 @@ const myRoute:Routes=[
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
     FormsModule,
+    HttpClientModule
     
   ],
   providers: [],
